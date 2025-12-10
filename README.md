@@ -27,8 +27,16 @@ Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop
 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒Q(t+1)=T⊕Q(t)
 
 **Procedure**
+1.Declare T, clk, Q.
 
-/* write all the steps invloved */
+2.Use always @(posedge clk).
+
+3.If T = 1 → toggle Q.
+
+4.If T = 0 → hold Q.
+
+5.End module.
+
 
 **PROGRAM**
 module t_ff (
@@ -63,4 +71,4 @@ Register number:25016067
 <img width="1919" height="1079" alt="Screenshot 2025-12-05 225337" src="https://github.com/user-attachments/assets/cfedb521-2c48-4b94-9b72-9f325320a50d" />
 
 **RESULTS**
-The T flipflop using verilog and validating their functionality using their functional tables
+The T flipflop using verilog and validating their functionality using their functional tables is verified.
